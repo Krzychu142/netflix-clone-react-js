@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Banner from "./Banner";
 
 import "./HomeScrenn.css";
 
@@ -7,7 +8,7 @@ function HomeScreen() {
 	return (
 		<div className='homeScreen'>
 			<Nav />
-			{/* Banner */}
+			<Banner />
 			{/* Row */}
 		</div>
 	);
