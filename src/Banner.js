@@ -3,6 +3,9 @@ import React from "react";
 import "./Banner.css";
 
 function Banner() {
+
+//
+	
 	function truncate(descriptionString, wordsNumber) {
 		return descriptionString?.length > wordsNumber
 			? descriptionString.substr(0, wordsNumber - 1) + "..."
