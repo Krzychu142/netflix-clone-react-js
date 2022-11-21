@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
 import Banner from "./Banner";
+import Row from "./Row";
+import requests from "./Requests";
 
 import "./HomeScrenn.css";
 
@@ -9,7 +11,11 @@ function HomeScreen() {
 		<div className='homeScreen'>
 			<Nav />
 			<Banner />
-			{/* Row */}
+			<Row
+				title='NETFLIX ORIGINALS'
+				fetchUrl={requests.fetchNetflixOriginals}
+				isLargeRow
+			/>
 		</div>
 	);
 }

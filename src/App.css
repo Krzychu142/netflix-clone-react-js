@@ -1,0 +1,4 @@
+.app {
+	background-color: #111;
+	/* vh is relative to 1% of viewport so 100vh means 100% of viewport */
+}
