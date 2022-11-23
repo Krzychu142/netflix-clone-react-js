@@ -21,8 +21,6 @@ function Banner() {
 		fetchData();
 	}, []);
 
-	console.log(movie);
-
 	function truncate(descriptionString, wordsNumber) {
 		return descriptionString?.length > wordsNumber
 			? descriptionString.substr(0, wordsNumber - 1) + "..."
@@ -49,7 +47,9 @@ function Banner() {
 					{truncate(movie?.overview, 150)}
 				</h1>
 			</div>
-			<div className='banner--fadeBottom' /* it's some kind of css trick */ />
+			<div
+				className='banner--fadeBottom' /* it's some kind of nice css trick */
+			/>
 		</header>
 	);
 }
