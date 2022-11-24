@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import SingUpScreen from "./SingUpScreen";
+
 import "./LoginScreen.css";
 
 function LoginScreen() {
@@ -24,9 +26,7 @@ function LoginScreen() {
 			</div>
 			<div className='loginScreen__body'>
 				{singIn ? (
-					<>
-						<h1>test</h1>
-					</>
+					<SingUpScreen />
 				) : (
 					<>
 						<h1>Unlimited films, TV programmes, and more.</h1>
