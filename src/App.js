@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeScreen from "./Screens/HomeScreen";
 import LoginScreen from "./Screens/LoginScreen";
+import ProfileScreen from "./Screens/ProfileScreen";
 
 import "./App.css";
 import { auth } from "./firebase";
@@ -28,7 +29,7 @@ function App() {
 			}
 		}); //listener of authentication change
 		return unsubscribe;
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<div className='app'>
@@ -37,6 +38,7 @@ function App() {
 					<LoginScreen />
 				) : (
 					<Routes>
+						<Route exact path='/profile' element={<ProfileScreen />}></Route>
 						<Route exact path='/' element={<HomeScreen />}>
 							{/* this is a root for the home screen */}
 						</Route>
