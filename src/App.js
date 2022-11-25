@@ -25,7 +25,7 @@ function App() {
 					})
 				);
 			} else {
-				dispatch(logout);
+				dispatch(logout());
 			}
 		}); //listener of authentication change
 		return unsubscribe;
